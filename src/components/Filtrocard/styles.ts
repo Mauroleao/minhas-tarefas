@@ -17,6 +17,7 @@ export const Contador = styled.span`
   display: block;
 `
 
-export const label = styled.span`
+export const Label = styled.span`
   font-size: 14px;
+  color: inherit;
 `
