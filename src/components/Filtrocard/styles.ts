@@ -2,7 +2,9 @@ import styled from 'styled-components'
 
 import { Props } from '.'
 
-export const Card = styled.div<Props>`
+type PropsSemLegendaEContador = Omit<Props, 'legenda' | 'contador'>
+
+export const Card = styled.div<PropsSemLegendaEContador>`
   padding: 8px;
   border: 1px solid ${(props) => (props.ativo ? '#1E90FF' : '#a1a1a1')};
   background-color: ${(props) => (props.ativo ? '#fff' : '#fcfcfc')};
@@ -15,6 +17,7 @@ export const Contador = styled.span`
   display: block;
 `
 
-export const label = styled.span`
+export const Label = styled.span`
   font-size: 14px;
+  color: inherit;
 `
