@@ -3,7 +3,7 @@ import { Container } from './styles'
 
 const ListaDeTarefas = () => (
   <Container>
-    <p>2 Tarefas marcadas como: "categoria" e "termo"</p>
+    <p>2 Tarefas marcadas como: &quot;categoria&quot; e &quot;termo&quot;</p>
     <ul>
       <li>
         <Tarefa />
