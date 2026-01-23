@@ -11,8 +11,9 @@ const ListaDeTarefas = () => {
       <p>2 Tarefas marcadas como: &quot;categoria&quot; e &quot;termo&quot;</p>
       <ul>
         {tarefas.map((t) => (
-          <li key={t.titulo}>
+          <li key={t.id}>
             <Tarefa
+              id={t.id}
               descricao={t.descricao}
               titulo={t.titulo}
               status={t.status}
